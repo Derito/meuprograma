@@ -2,8 +2,10 @@
 
 Java Restful
 
-### Diagrama de classes
+### Diagrama de Classes
 
+```mermaid
+classDiagram
     class User {
         - String name    
         - Account account    
@@ -36,7 +38,7 @@ Java Restful
     User *-- Feature: has
     User *-- Card: has
     User *-- News: has
-
+```
   
 
 
