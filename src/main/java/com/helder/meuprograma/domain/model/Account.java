@@ -1,4 +1,4 @@
-package com.helder.domain.model;
+package com.helder.meuprograma.domain.model;
 
 import jakarta.persistence.*;
 
@@ -9,13 +9,12 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
    @Column(unique = true)
    private String number;
     private String agency;
-    @Column(scale = 13, precision = 2)
+    @Column(scale = 2, precision = 13)
     private BigDecimal balance;
-    @Column(name = "addLimit",scale = 13, precision = 2)
+    @Column(name = "additionalLimit",scale = 2, precision = 13)
     private BigDecimal limit;
 
     public long getId() {

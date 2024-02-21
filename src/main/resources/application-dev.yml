@@ -4,7 +4,6 @@ spring:
     username: Derito
     password:
     driverClassName: org.h2.Driver
-    
   jpa:
     show-sql: true
     open-in-view: false
@@ -15,7 +14,7 @@ spring:
         format_sql: true
   h2:
     console:
-      enable: true
+      enabled: true
       path: /h2-console
       settings:
         trace: false

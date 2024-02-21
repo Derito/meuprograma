@@ -1,4 +1,4 @@
-package com.helder.domain.model;
+package com.helder.meuprograma.domain.model;
 
 import jakarta.persistence.*;
 
@@ -11,7 +11,7 @@ public class Card {
     private long id;
     @Column(unique = true)
     private String number;
-    @Column(name = "avaLimit",scale = 13, precision = 2)
+    @Column(name = "availableLimit",scale = 2, precision = 13)
     private BigDecimal limit;
 
     public long getId() {
